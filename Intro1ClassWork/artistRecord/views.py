@@ -1,7 +1,10 @@
 from django.http import  HttpResponse
 
+def badRoute(request):
+    return HttpResponse("bad Route, use music.")
+
 def index(resquest):
-    return  HttpResponse("Bad Route. artistOne , artistTwo , artistThree")
+    return  HttpResponse(" artistOne , artistTwo , artistThree")
 
 def artOne(request):
     return HttpResponse("something About this artist")
