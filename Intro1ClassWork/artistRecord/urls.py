@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = \
     [
-
+        # used to test between both parameters for user input
         path('music/',views.index, name = 'index'),
         path('artistOne/',views.artOne, name = 'basic'),
         path('artistTwo/', views.artTwo, name = 'secondary'),

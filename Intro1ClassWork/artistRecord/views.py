@@ -1,5 +1,8 @@
 from django.http import  HttpResponse
 
+# you could run through a list possibly to give one of the three artists
+
+# used for default routing
 def badRoute(request):
     return HttpResponse("bad Route, use music.")
 
@@ -14,3 +17,6 @@ def artTwo(request):
 
 def artThree(request):
     return  HttpResponse("A mysterious origin fact no one else knew")
+
+
+# YOU CAN ROUTE THROUGH EMPTY INPUT FOR OVERRIDING DEFAULT FIRST!!

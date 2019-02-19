@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path , include
 
 urlpatterns = [
-    path('',include('artistRecord.urls')),
+    path('',include('artistRecord.urls')),  # made it so you don't have to test against an empty route match only for less code
     path('music/',include('artistRecord.urls')),
     path('admin/', admin.site.urls)
 ]
